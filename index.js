@@ -14,8 +14,14 @@ var marker = L.marker([8.4799, 4.5418],9).addTo(map);
 
 
 var polygon = L.polygon([
-  [6.5244, 3.3792],
+  [7.3775, 3.9470],
   [7.621, 5.32],
+  [7.1600, 3.3483],
+]).addTo(map);
+
+var polygon2 = L.polygon([
+  [4.8156, 7.0498],
+  [6.5244, 7.5170],
   [6.3382, 5.6257],
 ]).addTo(map);
 
@@ -26,7 +32,7 @@ var circle = L.circle([9.3152, 9.8420], {
   fillOpacity: 0.5,
   radius: 50000,
 }).addTo(map);
-var circle = L.circle([6.3382, 5.6257], {
+var circle = L.circle([6.5244, 3.3792], {
   color: "red",
   fillColor: "#f03",
   fillOpacity: 0.5,
