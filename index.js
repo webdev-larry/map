@@ -48,6 +48,3 @@ function onMapClick(e) {
 }
 
 map.on("click", onMapClick);
-var bounds = [[4.272, 2.676], [13.892, 14.678]]; 
-map.setMaxBound(bounds);
-map.fitBounds(bounds);
