@@ -5,9 +5,9 @@ var osm =L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution:
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 });osm.addTo(map);
-var bounds = [[4.272, 2.676], [13.892, 14.678]]; 
-map.setMaxBound(bounds);
-map.fitBounds(bounds);
+// var bounds = [[4.272, 2.676], [13.892, 14.678]]; 
+// map.setMaxBound(bounds);
+// map.fitBounds(bounds);
 
 var marker = L.marker([8.4799, 4.5418],9).addTo(map);
 // var marker2 = L.markerClusterGroup();
