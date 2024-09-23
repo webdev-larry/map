@@ -8,6 +8,10 @@ var osm =L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 
 var marker = L.marker([8.4799, 4.5418],9).addTo(map);
+var marker2 = L.marker([6.6153, 3.5101], 9).addTo(map);
+var marker3 = L.marker([6.6264, 3.3556], 9).addTo(map);
+var marker3 = L.marker([6.4698, 3.6015], 9).addTo(map);
+var marker3 = L.marker([6.6018, 3.3515], 9).addTo(map);
 // var marker2 = L.markerClusterGroup();
 // marker2.addlayer(L.marker([7.16, 3.35]), L.marker([8.4799, 4.5418]));
 // map.addlayer(marker2);
@@ -19,19 +23,19 @@ var polygon = L.polygon([
   [7.1600, 3.3483],
 ]).addTo(map);
 
-var polygon2 = L.polygon([
-  [4.8156, 7.0498],
-  [6.5244, 7.5170],
-  [6.3382, 5.6257],
-]).addTo(map);
+// var polygon2 = L.polygon([
+//   [4.8156, 7.0498],
+//   [6.5244, 7.5170],
+//   [6.3382, 5.6257],
+// ]).addTo(map);
 
 //circle
-var circle = L.circle([9.3152, 9.8420], {
-  color: "red",
-  fillColor: "#f03",
-  fillOpacity: 0.5,
-  radius: 50000,
-}).addTo(map);
+// var circle = L.circle([9.3152, 9.8420], {
+//   color: "red",
+//   fillColor: "#f03",
+//   fillOpacity: 0.5,
+//   radius: 50000,
+// }).addTo(map);
 var circle = L.circle([6.5244, 3.3792], {
   color: "red",
   fillColor: "#f03",
@@ -41,7 +45,7 @@ var circle = L.circle([6.5244, 3.3792], {
 
 // popups alart
 marker.bindPopup("<b>Hello world!</b><br>High vulnurebility spot.").openPopup();
-circle.bindPopup("vulnurable spot.").openPopup();
+circle.bindPopup("Targeted state").openPopup();
 polygon.bindPopup("low vuln.").openPopup();
 
 var popup = L.popup();
@@ -49,7 +53,7 @@ var popup = L.popup();
 function onMapClick(e) {
   popup
     .setLatLng(e.latlng)
-    .setContent("You clicked the map at " + e.latlng.toString())
+    .setContent("Remainsafe-Public Service at " + e.latlng.toString())
     .openOn(map);
 }
 
